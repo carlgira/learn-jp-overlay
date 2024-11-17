@@ -21,7 +21,6 @@ def process_data(categories_file_path: str, init_row: int, end_row: int):
                     
             chapter_name = col_e
             if chapter_name in chapters and chapter_name != current_chapter:
-                print(chapter_name)
                 current_chapter = chapter_name
                 processed_data.append({
                     'type': 'chapter',

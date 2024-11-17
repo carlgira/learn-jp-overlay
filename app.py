@@ -49,7 +49,7 @@ def keyboardCallback(proxy, type_, event, refcon):
     
     elif keycode == 35:  # P play audio
         print(f"Playing sound file for row {current_row}")
-        sound_file = f"games/{platform}/{game}/sounds/{current_row}.wav"  # Adjust path as needed
+        sound_file = f"games/{platform}/{game}/audio/{current_row}.wav"  # Adjust path as needed
         if os.path.exists(sound_file):
             sound = NSSound.alloc().initWithContentsOfFile_byReference_(sound_file, True)
             if sound:

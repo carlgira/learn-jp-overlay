@@ -1,3 +1,4 @@
 pandas==2.2.3
 pyobjc==10.3.1
 manga-ocr==0.1.13
+fuzzywuzzy==0.18.0

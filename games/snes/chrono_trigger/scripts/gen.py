@@ -1,6 +1,6 @@
 from gen_script import generate_full_script
 from gen_dict import generate_dict
-#from gen_audio import generate_audio
+from gen_audio import generate_audio
 
 if __name__ == "__main__":
     categories_file_path = '../categories.csv'
@@ -20,6 +20,6 @@ if __name__ == "__main__":
     
     # Generate audio
     print('Generating audio...')
-    #generate_audio(full_script_path, audio_output_path)
+    generate_audio(full_script_path, audio_output_path)
     print('Audio generated.')
     
