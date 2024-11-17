@@ -8,8 +8,9 @@ You get the orignal text in Japanese, the translated text in English, the word b
 
 I used OpenEMU, place the window in the "hole", play normally, hit `T` to translate the text, it will show the translation in the overlay, also if you want, hit `P` to play the audio.
 
+For the scripts I used the retranslations from the Chrono Compendium https://www.chronocompendium.com/Term/Retranslation.html
 
-https://www.chronocompendium.com/Term/Retranslation.html
+![image](sample.png)
 
 ## Setup
 ```bash
@@ -36,7 +37,7 @@ The overlay is prepared to capture the text only of the bottom screen of the SNE
 If the translation is not working, check the screenshot.png file, it has to show the game text box.
 
 ## Generate game scripts and audio (not necessary to run, already generated)
-This will generate the scripts and audio for the game. The dictionary and the audios can take lots of time.
+This will generate the scripts and audio for the game. The dictionary and the audios can take lots of time, and you need to have the API keys for OpenAI.
 
 I had to run this on a linux machine because the TTS library was not working on macOS.
 ```bash

@@ -215,7 +215,7 @@ class OverlayView(NSView):
             header_width = analysis_width - (padding * 2)
             
             # Grid body dimensions
-            grid_body_height = self.frame().size.height - header_height - (padding * 4)
+            grid_body_height = self.frame().size.height - header_height - (padding * 3) + 5
             grid_x = padding
             grid_y = padding
             grid_width = analysis_width - (padding * 2)
@@ -390,6 +390,9 @@ class OverlayView(NSView):
 if __name__ == "__main__":
     app = NSApplication.sharedApplication()
     try:
+        icon = NSImage.alloc().initWithContentsOfFile_("icon.icns")
+        app.setApplicationIconImage_(icon)
+        
         app = NSApplication.sharedApplication()
         delegate = AppDelegate.alloc().init()
         app.setDelegate_(delegate)
